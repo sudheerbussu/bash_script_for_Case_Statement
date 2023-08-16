@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# exploring case block
+
+echo "Enter any fruit name"
+read fruit
+
+case $fruit in
+
+"apple")
+    echo "This is red fruit"
+    ;;
+"banana")
+    echo "This is yellow fruit"
+    ;;
+ "orange")
+     echo "This is in Orange color"
+ ;;
+ *)
+     echo "Unknown fruit"
+     ;;
+     esac
