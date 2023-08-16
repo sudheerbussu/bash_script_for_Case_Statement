@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# reading a single character from user 
+echo "Enter any Character"
+read char
+
+#Checking weather it's a single char or not
+
+if [[ $char != [a-zA-Z] ]]; then
+    echo " Not a valid input"
+else
+    echo "$char  is a valid input"
+fi
+
+# Comparing the input with the list of case values
+
+case $char in
+
+    "a"|"A")
+        echo "$ char  is a vowel"
+        ;;
+    "e"|"E")
+        echo "$char is a vowel"
+        ;;
+    "i"|"I")
+        echo "$ char  is a vowel"
+        ;;
+    "o"|"O")
+        echo "$ char  is a vowel"
+        ;;
+    "u"|"U")
+        echo "$ char  is a vowel"
+        ;;
+    *)
+    echo "$char is a Conconent"
+    ;;
+
+    esac
